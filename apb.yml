@@ -1,0 +1,28 @@
+version: 1.0
+name: progress-demo-apb
+description: APB for Demo
+bindable: False
+async: optional
+metadata:
+  displayName: Progress Demo (APB)
+  longDescription: A demo APB to show various features of the Automation Broker
+  providerDisplayName: "Red Hat, Inc."
+  imageUrl: https://raw.githubusercontent.com/johnkim76/ProgressDemo/master/ASB-Demo.png
+
+plans:
+  - name: last-op
+    description: APB demonstrating the Last Operation ASB Module
+    free: True
+    metadata:
+      displayName: ASB Last Operation Demo
+      longDescription: This plan deploys a simple APB to show the ASB's Last Operation Module in action
+      cost: $0.00
+    parameters: []
+  - name: custom-err-msg
+    description: APB demonstrating the Custom Error Message
+    free: True
+    metadata:
+      displayName: Custom Error Message Demo
+      longDescription: This plan deploys a simple APB to purposefully fail so that a Custom Error Message can be displayed in the WebUI
+      cost: $0.00
+    parameters: []
